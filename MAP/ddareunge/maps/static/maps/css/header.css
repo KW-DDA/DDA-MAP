@@ -1,0 +1,26 @@
+#header {
+    position: relative;
+    z-index:2; 
+    border: 1px solid #04CF63;
+    border-bottom-right-radius: 2em;
+    background-color: rgb(2,131,63);
+}
+
+#header .title {
+    margin-left:10px; 
+    color: white; 
+    font-family: S-CoreDream-9Black; 
+    font-size: 35px; 
+    text-decoration:none; 
+}
+
+#header .title img {
+    width:34px; 
+    border-radius: 50%; 
+    background-color: white; 
+    vertical-align:middle;
+}
+
+#header .title span {
+    vertical-align:middle;
+}

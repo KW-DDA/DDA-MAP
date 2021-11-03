@@ -1,0 +1,152 @@
+#stationList {
+    display: flex;
+    flex-direction: column;
+}
+
+#stationList .header {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding-left: 10px;
+    border-bottom: 1px solid #d8d8d8;
+}
+#stationList .header span {
+    font-weight: bold;
+    color: black;
+}
+#stationList .header .count {
+    margin-left: 6px;
+    color: #a5dc69;
+}
+
+#stationList ul {
+    font-family: "Malgun Gothic", "dotum", "돋움", "sans-serif";
+    margin: 0 0 10px 0;
+}
+#stationList .item {
+    cursor: default;
+    list-style: none;
+    padding-top: 5px;
+    border-bottom: 1px solid #e6e6e6;
+    min-height: 65px;
+    overflow: hidden;
+    position: relative;
+}
+#stationList .item.on {
+    background-color: #f0faf2;
+}
+#stationList .item.hover:not(.on) {
+    background-color: #f9f9f9;
+}
+
+#stationList .item .info {
+    float: left;
+    padding-left: 55px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#stationList .item .info .station-name {
+    margin-top: 4px;
+}
+#stationList .item .info span {
+    margin-top: 4px;   
+}
+#stationList .item .info .bike-count {
+    font-size: 14px;
+}
+#stationList .item .info .rack-count {
+    margin-left: 15px;
+    font-size: 13px;
+    color: #888;
+}
+#stationList .item .info .distance {
+    float: right;
+    margin-right: 15px;
+    font-size: 14px;
+}
+
+#stationList .item .buttons {
+    float: left;
+    margin: 10px 0 10px 55px;
+}
+
+#stationList .item .buttons button {
+    cursor: pointer;
+    margin-right: 5px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid #c7c7c7;
+}
+#stationList .item .buttons button.blue:hover {
+    background-color: #006be0;
+    color: white;
+}
+#stationList .item .buttons button.red:hover {
+    background-color: #f95c4e;
+    color: white;
+}
+
+#stationList .item .markerbg {
+    float: left;
+    position: absolute;
+    width: 36px;
+    height: 37px;
+    margin: 10px 0 0 10px;
+    background: url('../image/marker/number_green.png') no-repeat;
+}
+#stationList .item .marker_1 {
+    background-position: 0 -10px;
+}
+#stationList .item .marker_2 {
+    background-position: 0 -56px;
+}
+#stationList .item .marker_3 {
+    background-position: 0 -102px;
+}
+#stationList .item .marker_4 {
+    background-position: 0 -148px;
+}
+#stationList .item .marker_5 {
+    background-position: 0 -194px;
+}
+#stationList .item .marker_6 {
+    background-position: 0 -240px;
+}
+#stationList .item .marker_7 {
+    background-position: 0 -286px;
+}
+#stationList .item .marker_8 {
+    background-position: 0 -332px;
+}
+#stationList .item .marker_9 {
+    background-position: 0 -378px;
+}
+#stationList .item .marker_10 {
+    background-position: 0 -423px;
+}
+#stationList .item .marker_11 {
+    background-position: 0 -470px;
+}
+#stationList .item .marker_12 {
+    background-position: 0 -516px;
+}
+#stationList .item .marker_13 {
+    background-position: 0 -562px;
+}
+#stationList .item .marker_14 {
+    background-position: 0 -608px;
+}
+#stationList .item .marker_15 {
+    background-position: 0 -654px;
+}
+
+#stationList .item .marker-etc {
+    float: left;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    margin: 8px 0 0 7px;
+    background-image: url('../image/marker/station_green.png');
+    background-size: 35px;
+}

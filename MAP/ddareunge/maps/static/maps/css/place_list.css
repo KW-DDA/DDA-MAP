@@ -1,0 +1,149 @@
+#placeList {
+    display: flex;
+    flex-direction: column;
+}
+
+#placeList .header {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding-left: 10px;
+    border-bottom: 1px solid #d8d8d8;
+}
+#placeList .header span {
+    font-weight: bold;
+    color: black;
+}
+#placeList .header .count {
+    margin-left: 6px;
+    color: #6f9ad6;
+}
+
+#placeList ul {
+    font-family: "Malgun Gothic", "dotum", "돋움", "sans-serif";
+    margin: 0 0 10px 0;
+}
+#placeList .item {
+    cursor: default;
+    list-style: none;
+    border-bottom: 1px solid #e6e6e6;
+    min-height: 65px;
+    overflow: hidden;
+    position: relative;
+}
+#placeList .item.on {
+    background-color: #f0faf2;
+}
+#placeList .item.hover:not(.on) {
+    background-color: #f9f9f9;
+}
+
+#placeList .item h5 {
+    margin-top: 4px;
+    cursor: pointer;
+}
+#placeList .item h5:hover {
+    text-decoration: underline;
+}
+#placeList .item span {
+    display: block;
+    margin-top: 4px;
+    font-size: 14px;
+}
+
+#placeList .item button {
+    cursor: pointer;
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    border-radius: 5px;
+    border: 1px solid #c7c7c7;
+}
+#placeList .item button.on.orig, #placeList .item button.orig:hover {
+    background-color: #006be0;
+    color: white;
+}
+#placeList .item button.on.dest, #placeList .item button.dest:hover {
+    background-color: #f95c4e;
+    color: white;
+}
+
+#placeList .item .info {
+    float: left;
+    padding: 0 0 10px 55px;
+}
+#placeList .item .markerbg {
+    float: left;
+    position: absolute;
+    width: 36px;
+    height: 37px;
+    margin: 10px 0 0 10px;
+    background: url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/marker_number_blue.png)
+        no-repeat;
+}
+#placeList .item .marker_1 {
+    background-position: 0 -10px;
+}
+#placeList .item .marker_2 {
+    background-position: 0 -56px;
+}
+#placeList .item .marker_3 {
+    background-position: 0 -102px;
+}
+#placeList .item .marker_4 {
+    background-position: 0 -148px;
+}
+#placeList .item .marker_5 {
+    background-position: 0 -194px;
+}
+#placeList .item .marker_6 {
+    background-position: 0 -240px;
+}
+#placeList .item .marker_7 {
+    background-position: 0 -286px;
+}
+#placeList .item .marker_8 {
+    background-position: 0 -332px;
+}
+#placeList .item .marker_9 {
+    background-position: 0 -378px;
+}
+#placeList .item .marker_10 {
+    background-position: 0 -423px;
+}
+#placeList .item .marker_11 {
+    background-position: 0 -470px;
+}
+#placeList .item .marker_12 {
+    background-position: 0 -516px;
+}
+#placeList .item .marker_13 {
+    background-position: 0 -562px;
+}
+#placeList .item .marker_14 {
+    background-position: 0 -608px;
+}
+#placeList .item .marker_15 {
+    background-position: 0 -654px;
+}
+
+#placeList .pagination {
+    height: 20px;
+    margin: 7px 0 18px 0;
+    text-align: center;
+}
+#placeList .pagination a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #000;
+    font-size: 16px;
+    text-decoration: none;
+}
+#placeList .pagination .on {
+    font-weight: bold;
+    cursor: default;
+    color: #0062ff;
+}

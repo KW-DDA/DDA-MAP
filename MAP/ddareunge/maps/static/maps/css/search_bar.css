@@ -1,0 +1,149 @@
+#search-bar {
+    width: 100%;
+    min-height: 156px;
+}
+
+#search-bar .search-box {
+    display: flex;
+    margin-left: 10px;
+    padding: 5px 10px;
+    left: 50%;
+    background-color: #fff;
+    border: 1px solid #0AC45B;
+    border-radius: 30px;
+    box-shadow: 0px 0px .5px 1px #067c20;
+    width: 350px;
+    align-items: center;
+}
+
+#search-bar #orig_div.search-box {
+    margin-top: 5px;
+}
+#search-bar #dest_div.search-box {
+    margin-top: 10px;
+}
+
+#search-bar .search-title {
+    cursor: pointer;
+    width: 50px;
+    text-align: center;
+    position: relative;
+    font-size: 15px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+#search-bar .search-btn {
+    cursor: pointer;
+    text-decoration: none;
+    float: right;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(2,131,63);
+}
+
+#search-bar .search-txt {
+    margin: 0 0 0 0;
+    padding: 8px 7px;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 0.95rem;
+    width: 225px;
+    line-height: 100%;
+}
+
+#displayOrigin, #displayDest {
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+#showOrigStation, #showDestStation {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+#origStation, #destStation {
+    font-size: 15px;
+    margin-left: 7px;
+    color: white;
+}
+
+#setOriginCurrentLocation, #setDestCurrentLocation {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin: 0 0 0 0;
+    height: 100%;
+    color: rgb(2,131,63);
+}
+
+#clearOrigStation, #clearDestStation {
+    border: none;
+    background-color: transparent;    
+    color: #a4cf5d;
+    font-weight: bold;
+}
+
+#clear_orig, #clear_dest {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin: 0 0 0 0;
+    height: 100%;
+    color: white;
+}
+
+#origin:hover ~ #clear_orig, #clear_orig:hover {
+    color: rgb(2,131,63);
+}
+
+#destination:hover ~ #clear_dest, #clear_dest:hover {
+    color: rgb(2,131,63);
+}
+
+#findBestStation {
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid darkgreen;
+    background-color: #bfee74;
+    height: 35px;
+    width: 100px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#dateandtime {
+    display: flex;
+    margin-top: 8px;
+    align-items: center;
+}
+
+input[type="datetime-local"] {
+    margin-right: 7px;
+    font-size: 13px;
+    width: 210px;
+    height: 25px;
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+}
+
+#reset_datetime {
+    cursor: pointer;
+    display: inline-block;
+    background-image: url('../image/reset_datetime.png');
+    background-size: 21px;
+    background-repeat: no-repeat;
+    width: 21px;
+    height: 21px;
+    margin-right: 24px;
+}

@@ -1,0 +1,54 @@
+#range_mypos {
+    width: 60px;
+    height: 20px;
+    font-size: 12px;
+}
+
+#excludeEmpty_mypos {
+    margin-top: 5px;
+    width: 18px;
+    height: 18px;
+}
+
+#showCurrentPosition, #allBikeList, #filter_button {
+    cursor: pointer;
+    font-size: 17px;
+    border: none;
+    background-color: transparent;
+    color: rgb(65, 65, 65);
+}
+
+#displayNearbyStations, #closeFilter {
+    font-size: 15px;
+    font-weight: bold;
+    width: 60px;
+    height: 28px;
+    border-radius: 14px;
+    border: 1px solid darkgreen;
+    background-color: white;
+}
+
+#filterWrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #D5EBD1;
+    padding: 10px 10px 10px 10px;
+    border-bottom-left-radius: 0.7em;
+    box-shadow: 3px 2px 5px rgb(148, 148, 148);
+}
+
+#filter_bar {
+    display: flex;
+    height: 20px;
+}
+
+#filter {
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    display: none;
+}

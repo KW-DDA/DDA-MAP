@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'maps/image/따릉이.png' %}">
+    <title>따릉이 지도</title>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'maps/css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'maps/css/header.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'maps/css/place_list.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'maps/css/station_list.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'maps/css/route_list.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'maps/css/search_bar.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'maps/css/custom_overlay.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'maps/css/range_mypos.css' %}">
+
+    <!-- 폰트 적용 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0-beta2/css/all.css">
+    <style>
+        html, div, button, select {
+            font-family: 'Gowun Dodum', sans-serif;
+        }
+
+        @font-face {
+            font-family: 'S-CoreDream-9Black';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body>
+<div class="map-container">
+    <div id="map"></div>
+</div>
+
+<div id="sidebar">
+    <div id="header">
+        <a class="title" href="/main">
+            <img src="{% static 'maps/image/따릉이.png' %}">
+            <span>D-MAP</span>
+        </a>
+        {% include 'maps/search_bar.html' %}
+
+    </div>
+
+    <div id="main_list_wrap"></div>
+</div>
+
+{% include 'maps/range_mypos.html' %}
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="//dapi.kakao.com/v2/maps/sdk.js?appkey={{ KAKAO_MAPS_APIKEY }}"></script>
+<script src="https://unpkg.com/supercluster@6.0.2/dist/supercluster.min.js"></script>
+<script src="https://unpkg.com/jsts@2.7.1/dist/jsts.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+
+<script>
+    var PREV_STATE = {{ forInit|safe }};
+    var KAKAO_REST_APIKEY = "{{ KAKAO_REST_APIKEY }}";
+</script>
+<script src="{% static 'maps/js/StationCluster.js' %}"></script>
+<script src="{% static 'maps/js/OrigDestStation.js' %}"></script>
+<script src="{% static 'maps/js/initial_setup.js' %}"></script>
+<script src="{% static 'maps/js/update_station.js' %}"></script>
+<script src="{% static 'maps/js/marker_overlays.js' %}"></script>
+<script src="{% static 'maps/js/recommend_station.js' %}"></script>
+<script src="{% static 'maps/js/keyword_search.js' %}"></script>
+<script src="{% static 'maps/js/display_stations.js' %}"></script>
+<script src="{% static 'maps/js/map.js' %}"></script>
+</body>
+</html>

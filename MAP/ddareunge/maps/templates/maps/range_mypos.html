@@ -1,0 +1,41 @@
+{% load static %}
+<div id="filterWrap">
+    <div id="filter_bar">
+        <button id="showCurrentPosition" class="fa-solid fa-location-crosshairs" title="현위치" style="margin-right: 26px"></button>
+        <button id="allBikeList" class="fas fa-map-marked-alt" title="전체 대여소 보기" style="margin-right: 26px"
+                onclick="allBikeStation()"></button>
+        <button id="filter_button" class="fas fa-filter" title="필터" onclick="click_filter('open')"></button>
+    </div>
+    <div id="filter">
+        <label for="range_mypos">기준 범위</label>
+        <select id="range_mypos" name="range_mypos" style="vertical-align:middle; text-align: center;">
+            <option value="All" {% if range_mypos == "All" %}selected{% endif %}>전체</option>
+            <option value="300" {% if range_mypos == "300" %}selected{% endif %}>300m</option>
+            <option value="500" {% if range_mypos == "500" %}selected{% endif %}>500m</option>
+            <option value="1000" {% if range_mypos == "1000" %}selected{% endif %}>1km</option>
+        </select>
+        <br>
+        <label for="excludeEmpty_mypos">빈 대여소 제외</label>
+        <input type="checkbox" id="excludeEmpty_mypos" name="excludeEmpty_mypos"
+               {% if excludeEmpty_mypos %}checked{% endif %}/>
+        <br>
+        <button id="closeFilter" onclick="click_filter('close')">닫기</button>&nbsp;
+        <button id="displayNearbyStations">적용</button>
+    </div>
+</div>
+
+<script>
+    function allBikeStation() {
+        document.getElementById('range_mypos').value = "All";
+        document.getElementById('excludeEmpty_mypos').checked = false;
+        $("#displayNearbyStations").trigger("click");
+    }
+
+    function click_filter(s) {
+        if (s === "close") {
+            document.getElementById('filter').style.display = "none";
+        } else {
+            document.getElementById('filter').style.display = "block";
+        }
+    }
+</script>

@@ -1,0 +1,78 @@
+.station-overlay-detailed {position: absolute;left: 0;bottom: 40px;width: 260px;height:auto; margin-left: -130px;text-align: left;overflow: hidden;font-size: 12px;font-family: 'Malgun Gothic', dotum, '돋움', sans-serif;line-height: 1.5;}
+.station-overlay-detailed * {padding: 0;margin: 0;}
+.station-overlay-detailed .info {width: 258px;height:auto; border-radius: 5px;border-bottom: 2px solid #ccc;border-right: 1px solid #ccc;overflow: hidden;background: #fff;}
+.station-overlay-detailed .info:nth-child(1) {border: 0;box-shadow: 0px 1px 2px #888;}
+.station-overlay-detailed .info .head {min-height: 30px;background: #c7eed4;border-bottom: 1px solid #ddd;}
+.station-overlay-detailed .info .title {padding: 6px 0 7px 6px; width: 220px; font-size: 15px;font-weight: bold; text-overflow: clip; white-space: normal; word-break: break-all;}
+.station-overlay-detailed .info .close {position: absolute; top: 10px;right: 10px;color: #888;width: 15px;height: 15px; background-size:15px; background-image: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/overlay_close.png');}
+.station-overlay-detailed .info .close:hover {cursor: pointer;}
+.station-overlay-detailed .info .body {overflow: hidden;}
+.station-overlay-detailed .info .desc {margin: 10px 0 0 10px;height: 75px;}
+.station-overlay-detailed .desc .bike-count {overflow: hidden; font-size: 15px; text-overflow: ellipsis; white-space: nowrap;}
+.station-overlay-detailed .desc .rack-count {font-size: 13px;color: #888;margin-top: -1px; margin-bottom: 5px;}
+.station-overlay-detailed .desc .buttons {position: absolute; bottom: 20px;}
+.station-overlay-detailed .desc .buttons button {
+    cursor: pointer;
+    margin-right: 5px; 
+    padding: 0 5px;
+    border-radius: 5px;
+    border: 1px solid #c7c7c7;
+}
+.station-overlay-detailed .desc .buttons button.blue:hover {
+    background-color: #006be0;
+    color: white;
+}
+.station-overlay-detailed .desc .buttons button.red:hover {
+    background-color: #f95c4e;
+    color: white;
+}
+.station-overlay-detailed::after {position: relative; display:block; content: '';margin-left: -11px;left: 50%;bottom: 0;width: 22px;height: 12px;background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')}
+
+.station-overlay-detailed-head {position: absolute;left: 0;bottom: 40px;width: 200px;height:auto; margin-left: -100px;text-align: left;overflow: hidden;font-size: 12px;font-family: 'Malgun Gothic', dotum, '돋움', sans-serif;line-height: 1.5;}
+.station-overlay-detailed-head * {padding: 0;margin: 0;}
+.station-overlay-detailed-head .info {width: 198px;height:auto; border-radius: 5px;border-bottom: 2px solid #ccc;border-right: 1px solid #ccc;overflow: hidden;background: #fff;}
+.station-overlay-detailed-head .info:nth-child(1) {border: 0;box-shadow: 0px 1px 2px #888;}
+.station-overlay-detailed-head .info .head {min-height: 25px; background-color: #c7eed4;}
+.station-overlay-detailed-head .info .title {padding: 3px 0 4px 5px; width: 170px; font-size: 13px;font-weight: bold; text-overflow: clip; white-space: normal; word-break: break-all;}
+.station-overlay-detailed-head .info .close {position: absolute; top: 6px;right: 8px;color: #888;width: 12px;height: 12px; background-size:12px; background-image: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/overlay_close.png');}
+.station-overlay-detailed-head .info .close:hover {cursor: pointer;}
+.station-overlay-detailed-head .info .body {display: none;}
+.station-overlay-detailed-head::after {position: relative; display:block; content: '';margin-left: -11px;left: 50%;bottom: 0;width: 22px;height: 12px;background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')}
+
+.station-overlay-simple {position: absolute; left: 23px; bottom: -15px;}
+.station-overlay-simple * {display: inline-block; vertical-align: top;}
+.station-overlay-simple .left {background: url("https://t1.daumcdn.net/localimg/localimages/07/2011/map/storeview/tip_l.png") no-repeat;display: inline-block;height: 30px;overflow: hidden;vertical-align: top;width: 7px;}
+.station-overlay-simple .center {background: url("https://t1.daumcdn.net/localimg/localimages/07/2011/map/storeview/tip_bg.png") repeat-x;display: inline-block;height: 30px;font-size: 14px;line-height: 22px;}
+.station-overlay-simple .right {background: url("https://t1.daumcdn.net/localimg/localimages/07/2011/map/storeview/tip_r.png") -1px 0  no-repeat;display: inline-block;height: 30px;overflow: hidden;width: 6px;}
+
+
+.place-overlay-detailed {position: absolute;left: 0;bottom: 43px;width: 200px; height:auto; margin-left: -100px;text-align: left;overflow: hidden;font-size: 12px;font-family: 'Malgun Gothic', dotum, '돋움', sans-serif;line-height: 1.5;}
+.place-overlay-detailed * {padding: 0;margin: 0;}
+.place-overlay-detailed .info {width: 198px;height:auto; border-radius: 5px;border-bottom: 2px solid #ccc;border-right: 1px solid #ccc;overflow: hidden;background: #fff;}
+.place-overlay-detailed .info:nth-child(1) {border: 0;box-shadow: 0px 1px 2px #888;}
+.place-overlay-detailed .info .head {min-height: 25px;background: rgb(255, 255, 255);}
+.place-overlay-detailed .info .title {padding: 3px 0 4px 5px; width: 170px; font-size: 12px;font-weight: bold; text-overflow: clip; white-space: normal; word-break: break-all;}
+.place-overlay-detailed .info .close {position: absolute; top: 6px;right: 8px;color: #888;width: 12px;height: 12px; background-size:12px; background-image: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/overlay_close.png');}
+.place-overlay-detailed .info .close:hover {cursor: pointer;}
+.place-overlay-detailed .info .body {overflow: hidden;}
+.place-overlay-detailed .info .desc {margin: 10px 0 0 10px; height: 75px;}
+.place-overlay-detailed .desc .address {overflow: hidden; font-size: 13px; text-overflow: ellipsis; white-space: nowrap;}
+.place-overlay-detailed .desc .phone {font-size: 13px;color: #888;margin-top: -1px; margin-bottom: 5px;}
+.place-overlay-detailed .desc .buttons {position: absolute; bottom: 20px;}
+.place-overlay-detailed .desc .buttons button {margin-right: 5px;}
+.place-overlay-detailed::after {position: relative; display:block; content: '';margin-left: -11px;left: 50%;bottom: 0;width: 22px;height: 12px;background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')}
+
+.place-overlay-simple {position: absolute; left: 23px; bottom: -7px;}
+.place-overlay-simple * {display: inline-block; vertical-align: top;}
+.place-overlay-simple .left {background: url("https://t1.daumcdn.net/localimg/localimages/07/2011/map/storeview/tip_l.png") no-repeat;display: inline-block;height: 24px;overflow: hidden;vertical-align: top;width: 7px;}
+.place-overlay-simple .center {background: url("https://t1.daumcdn.net/localimg/localimages/07/2011/map/storeview/tip_bg.png") repeat-x;display: inline-block;height: 24px;font-size: 12px;line-height: 24px;}
+.place-overlay-simple .right {background: url("https://t1.daumcdn.net/localimg/localimages/07/2011/map/storeview/tip_r.png") -1px 0  no-repeat;display: inline-block;height: 24px;overflow: hidden;width: 6px;}
+
+
+.station-cluster {text-align: center; font-weight: bold;  color: rgb(51, 51, 51); display: block; user-select: none; -webkit-text-size-adjust: none;}
+.station-cluster:hover {cursor: pointer;}
+.station-cluster * {padding: 0;margin: 0;}
+.station-cluster.size1 {height: 52px; width: 52px; line-height: 52px; font-size: 14px; background: url(https://i1.daumcdn.net/localimg/localimages/07/mapjsapi/cluster.png) 0px 0px;}
+.station-cluster.size2 {height: 56px; width: 56px; line-height: 57px; font-size: 16px; background: url(https://i1.daumcdn.net/localimg/localimages/07/mapjsapi/cluster.png) 0px -90px;}
+.station-cluster.size3 {height: 66px; width: 66px; line-height: 68px; font-size: 18px; background: url(https://i1.daumcdn.net/localimg/localimages/07/mapjsapi/cluster.png) 0px -180px;}
+.station-cluster.size4 {height: 78px; width: 78px; line-height: 81px; font-size: 20px; background: url(https://i1.daumcdn.net/localimg/localimages/07/mapjsapi/cluster.png) 0px -270px;}

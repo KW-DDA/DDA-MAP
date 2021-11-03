@@ -1,0 +1,184 @@
+#routeList {
+    display: flex;
+    flex-direction: column;
+}
+
+#routeList .header {
+    min-height: 40px;
+    padding: 0 10px;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+#routeList .title {
+    display: flex;
+    align-items: center;
+    margin: 7px 0;
+}
+
+#routeList .header .title span {
+    font-weight: bold;
+    color: black;
+}
+
+#routeList .header .title .when {
+    color: rgb(37, 178, 32);
+    margin-right: 6px;
+}
+
+#routeList .header .title {
+    margin-left: auto;
+}
+
+.showOption {
+    margin-top: 1px
+}
+
+.showOption, .applyOption {
+    cursor: pointer;
+    background-color: #D5EBD1;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid yellowgreen;
+    margin-left: auto;
+}
+
+select {
+    border-radius: 5px;
+}
+
+#routeList .header .options {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 250px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+
+    border: 1px solid rgb(182, 182, 182);
+    box-shadow: 3px 1px 3px rgb(199, 199, 199);
+
+    /*margin: 10px 0;*/
+}
+
+#routeList .header .options label {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#routeList .header .options .route-mode {
+    margin-left: auto;
+    margin-bottom: 4px;
+}
+
+#routeList .header .options .route-mode select {
+    width: 110px;
+}
+
+#routeList .header .options .applyOption {
+    margin-left: auto;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    width: 50px;
+}
+
+
+#routeList ul {
+    margin: 0 0 10px 0;
+}
+
+#routeList .item {
+    cursor: default;
+    list-style: none;
+    border-bottom: 1px solid #e6e6e6;
+    min-height: 65px;
+    overflow: hidden;
+    position: relative;
+
+    padding: 0 10px;
+}
+
+#routeList .item.on {
+    background-color: #f0faf2;
+}
+
+#routeList .item.hover:not(.on) {
+    background-color: #f9f9f9;
+}
+
+#routeList .item .station-wrap {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+#routeList .item .info-wrap {
+    display: flex;
+    align-items:end;
+    margin: 5px 0;
+}
+
+#routeList .item .marker-orig, #routeList .item .marker-dest {
+    display: inline-block;
+    background-size: 32px;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+}
+#routeList .item .img-ticket {
+    display: inline-block;
+    background-size: 26px;
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 26px;
+    margin-left: 3px;
+}
+#routeList .item .img-bike {
+    display: inline-block;
+    background-size: 22px;
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 22px;
+}
+
+#routeList .item .marker-orig {
+    background-image: url('../image/marker/station_blue.png');
+}
+#routeList .item .marker-dest {
+    background-image: url('../image/marker/station_red.png');
+}
+#routeList .item .img-ticket {
+    background-image: url('../image/ticket.png');
+}
+#routeList .item .img-bike {
+    background-image: url('../image/bike.png');
+}
+
+#routeList .item .text-totaltime {
+    font-size: 22px;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+}
+
+#routeList .item .img-bike {
+    margin-left: 7px;
+}
+
+#routeList .item .text-biketime {
+    color: #303030
+}
+
+#routeList .item .text-distance {
+    margin-left: 7px;
+    color: #303030
+}
+
+#routeList .item .text-orig, #routeList .item .text-dest {
+    margin-left: 5px;
+}
+
+#routeList .item .text-ticket {
+    margin-left: 10px;
+}

@@ -1,0 +1,41 @@
+{% load static %}
+<div id="search-bar">
+    <div id="orig_div" class="search-box">
+        <span id="showOrigin" class="search-title">출발지</span>
+        <input type="text" id="origin" class="search-txt" name="" placeholder="출발지를 입력하세요">
+        <input type="hidden" id="originName" value="{{ forInit.origName }}" data-id="{{ forInit.origId }}"/>
+        <button id="clear_orig" class="fas fa-times"></button>
+        <button id="setOriginCurrentLocation" class="fas fa-location-arrow currentLocationBtn"></button>
+        <button id="searchOrigin" class="search-btn fas fa-search"
+                style="border: none; outline: none; margin: 0 0 0 0; height: 100%;"></button>
+    </div>
+
+    <div id="dest_div" class="search-box">
+        <span id="showDest" class="search-title">도착지</span>
+        <input type="text" id="destination" class="search-txt" name="" placeholder="도착지를 입력하세요">
+        <input type="hidden" id="destinationName" value="{{ forInit.destName }}" data-id="{{ forInit.destId }}"/>
+        <button id="clear_dest" class="fas fa-times"></button>
+        <button id="setDestCurrentLocation" class="fas fa-location-arrow currentLocationBtn"></button>
+        <button id="searchDest" class="search-btn fas fa-search"
+                style="border: none; outline: none; margin: 0 0 0 0; height: 100%;"></button>
+    </div>
+    <div style="margin-left:15px; margin-top: 5px;">
+        <div id="dateandtime">
+            <input type="datetime-local" id="departureDateTime" value="{{ depDateTime }}"/>
+            <span id="reset_datetime"></span>
+            <button id="findBestStation">경로 추천</button>
+        </div>
+    </div>
+    <div id="selectStation">
+        <div id="displayOrigin" style="display: none">
+            <span id="showOrigStation" style="cursor: pointer;">출발대여소</span>
+            <span id="origStation"></span>
+            <button id="clearOrigStation" class="fas fa-times" style="display: none;"></button>
+        </div>
+        <div id="displayDest" style="display: none">
+            <span id="showDestStation" style="cursor: pointer;">도착대여소</span>
+            <span id="destStation"></span>
+            <button id="clearDestStation" class="fas fa-times" style="display: none;"></button>
+        </div>
+    </div>
+</div>
